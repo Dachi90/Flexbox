@@ -1,0 +1,124 @@
+*{
+	margin:0;
+}
+
+
+/* Cabecera */
+.cabecera{
+	display: flex;
+	justify-content: flex-end;
+
+	margin:0;
+	height: 100vh;
+	background: url(../img/cabecera.jpg) no-repeat center center ;
+	background-size: cover;
+	
+}
+
+
+.menu {
+	width: 20%;
+	height: 3vh;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	position: fixed;
+		
+}
+
+.boton{
+	
+	display: flex;
+	align-items: center;
+
+	
+	border-radius: 5px;
+	padding: 0px 5px;
+	background-color: #235784;
+}
+.boton a {
+	text-decoration: none;
+	color:black;
+}
+
+
+/* Sección proyectos */
+
+.proyectos{
+	
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 2%;
+
+	background: url(../img/fondo.jpg) no-repeat center center ;
+	background-size: cover;
+		
+}
+
+.unProyecto{
+
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 3%;
+
+	
+}
+
+.proyectos .unProyecto:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+    transition: 1.5s;
+	-webkit-transition:1.5s;
+}
+
+
+
+.texto {
+	padding-top: 2%;
+}
+
+
+/* Seccion de contacto */
+
+.contacto {
+	background: url(../img/contacto.jpg) no-repeat center center;
+	background-size: cover;
+	padding-top: 2%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.about{
+	
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.redes{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+
+.redes a {
+	text-decoration: none;
+	color:black;
+}
+
+.contacto .logos:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transition: 1.5s;
+	-webkit-transition:1.5s;
+}
