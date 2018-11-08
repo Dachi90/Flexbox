@@ -122,3 +122,16 @@
 	transition: 1.5s;
 	-webkit-transition:1.5s;
 }
+
+
+
+
+/* media query <1017px*/
+
+@media (max-width: 1017px){
+
+	.proyectos{
+		height: auto;
+	}
+
+}
