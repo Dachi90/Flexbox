@@ -4,54 +4,81 @@
 
 
 /* Cabecera */
-.cabecera{
-	display: flex;
-	justify-content: flex-end;
 
-	margin:0;
+/*Estilos para a todos los contenedores para conseguir una posicion fija*/
+.wrapper{
+	transition: top 0.3s;
+	position: fixed;
+	width: 100%;
+	top:0;
+	background-color: #333;
+}
+
+/*Estilos para el contenedor general*/
+.menu{
+
+	display: flex;
+	justify-content: space-between;
+	height: 5vh;
+}
+.menu a {
+	text-decoration: none;
+	color: #f2f2f2;
+	padding: 5px;
+
+}
+.menu i {
+	padding-right: 5px;
+}
+
+/*Estilos para el logo y el nombre*/
+.logo{
+	display: flex;
+}
+.logo a{
+	display: flex;
+	align-items: center;
+}
+
+/*Estilos para los botones del menú*/
+.enlaces{
+
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	
+}
+.enlaces a {
+	
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+.enlaces a:hover {
+	background-color: #ddd;
+  	color: black;
+}
+
+
+/*Fondo cabecera*/
+
+.fondo{
 	height: 100vh;
 	background: url(../img/cabecera.jpg) no-repeat center center ;
 	background-size: cover;
-	
 }
-
-
-.menu {
-	width: 20%;
-	height: 3vh;
-	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
-	position: fixed;
-		
-}
-
-.boton{
-	
-	display: flex;
-	align-items: center;
-
-	
-	border-radius: 5px;
-	padding: 0px 5px;
-	background-color: #235784;
-}
-.boton a {
-	text-decoration: none;
-	color:black;
-}
-
 
 /* Sección proyectos */
 
 .proyectos{
 	
-	height: 100vh;
+	
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 	padding-top: 2%;
+	padding-bottom: 2%;
 
 	background: url(../img/fondo.jpg) no-repeat center center ;
 	background-size: cover;
@@ -68,14 +95,6 @@
 
 	
 }
-
-.proyectos .unProyecto:hover {
-	transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-    transition: 1.5s;
-	-webkit-transition:1.5s;
-}
-
 
 
 .texto {
@@ -126,9 +145,11 @@
 
 
 
-/* media query <1017px*/
+/* media query <999px*/
 
-@media (max-width: 1017px){
+@media (max-width: 999px){
+
+	
 
 	.proyectos{
 		height: auto;
