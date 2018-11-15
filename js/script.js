@@ -1,6 +1,7 @@
 
 
 var prevScrollpos = window.pageYOffset;
+
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -10,3 +11,12 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
+
+
+$(document).ready(function(){
+    $("#burger").click(function(){
+        $("#enlaces").toggle();
+    });
+});
+
