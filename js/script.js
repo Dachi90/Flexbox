@@ -3,9 +3,9 @@
 
 var prevScrollpos = window.pageYOffset;
 
-=======
+
 var prevScrollpos = window.pageYOffset;
->>>>>>> gh-pages
+
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
