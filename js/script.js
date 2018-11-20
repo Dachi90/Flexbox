@@ -1,7 +1,11 @@
 
 
+
 var prevScrollpos = window.pageYOffset;
 
+=======
+var prevScrollpos = window.pageYOffset;
+>>>>>>> gh-pages
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -12,18 +16,3 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-
-
-// $(document).ready(function(){
-//     $("#burger").click(function(){
-//         $("#enlaces").toggle();
-//     });
-// });
-// $(document).ready(function(){
-// 	$('#burger').click(function(){
-// 	  if ( $('#navbar_links').css('visibility') == 'hidden' )
-// 	    $('#navbar_links').css('visibility','visible');
-// 	  else
-// 	    $('#navbar_links').css('visibility','hidden');
-// 	});
-// });
