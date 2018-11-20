@@ -48,23 +48,22 @@
 	justify-content: flex-end;
 	align-items: center;
 
-	visibility: ;
 	
 }
+
+
 .enlaces a {
 	
 	border-radius: 5px;
 	display: flex;
 	align-items: center;
+	padding-right: 10px;
 }
 .enlaces a:hover {
 	background-color: #ddd;
   	color: black;
 }
 
-.burger{
-	visibility: visible; 
-}
 
 
 /*Fondo cabecera*/
@@ -152,18 +151,16 @@
 
 
 
-/* media query <999px*/
+/* media query <999px */
 
-@media (min-width: 900px){
+@media (max-width: 350px){
 
-	.burger{
-		visibility:hidden;
+	.logo {
+		display: none;
 	}
 
-	.enlaces{
-		visibility: visible;
+	.menu {
+		justify-content: center;
 	}
-
 	
-
 }
