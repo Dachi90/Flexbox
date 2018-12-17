@@ -16,3 +16,7 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
+
+function menuBurger() {
+	$("#menuMovil").slideToggle(600);	
+}
